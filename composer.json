@@ -10,7 +10,7 @@
         "bezhansalleh/filament-shield": "^4.2",
         "filament/filament": "^5.0",
         "laravel/framework": "^12.0",
-        "laravel/tinker": "^2.10.1",
+        "laravel/tinker": "^3.2.0",
         "marcelodelgado/filament-announcements": "^1.0",
         "mradder/filament-logger": "^1.2"
     },
