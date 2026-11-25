@@ -1,0 +1,38 @@
+# Dependabot keeps dependencies up to date and opens PRs for security fixes.
+# Docs: https://docs.github.com/code-security/dependabot
+version: 2
+updates:
+  - package-ecosystem: "composer"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      timezone: "Asia/Shanghai"
+    open-pull-requests-limit: 5
+    groups:
+      laravel-and-filament:
+        patterns:
+          - "laravel/*"
+          - "filament/*"
+      composer-minor-and-patch:
+        update-types:
+          - "minor"
+          - "patch"
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      timezone: "Asia/Shanghai"
+    open-pull-requests-limit: 5
+    groups:
+      npm-minor-and-patch:
+        update-types:
+          - "minor"
+          - "patch"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
